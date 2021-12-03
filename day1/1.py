@@ -17,10 +17,7 @@ print(t)
 t = 0
 
 for i in range(len(data)-3):
-    a = sum(data[i:i+3])
-    b = sum(data[i+1:i+4])
-
-    if b > a:
+    if data[i+3] > data[i]:
         t += 1
 
 print(t)
